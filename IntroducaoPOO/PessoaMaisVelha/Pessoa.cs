@@ -1,4 +1,8 @@
-class Pessoa {
-  public string? nome;
-  public int idade;
+namespace PessoaMaisVelha
+{
+  class Pessoa {
+
+    public string? nome;
+    public int idade;
+  }
 }
