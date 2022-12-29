@@ -13,7 +13,7 @@ namespace GerenciaSalario
     }
 
     public void IncreaseSalary(double percent){
-      Salary += (Salary * (percent/ 100));
+      Salary += (Salary * (percent / 100));
     }
 
     public override string ToString()
