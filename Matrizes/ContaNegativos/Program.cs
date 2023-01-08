@@ -20,7 +20,16 @@ namespace ContaNegativos
           matriz[i, j] = int.Parse(numbers[j]); // as posições do vetor são iguais a posição das colunas da matriz
         }
       }
-     
+      System.Console.WriteLine("--------------------------------");
+      System.Console.WriteLine("Elementos da matriz: ");
+      for (int i = 0; i < matriz.GetLength(0); i++)
+      {
+        for (int j = 0; j < matriz.GetLength(1); j++)
+        {
+         System.Console.Write(matriz[i, j] + " ");
+        }
+        Console.WriteLine(); // adiciona quebra de linha no final de cada linha que foi impressa
+      }
       System.Console.WriteLine("--------------------------------");
       System.Console.WriteLine("Elementos da diagonal principal da matriz: ");
       for (int i = 0; i < num; i++) 
@@ -30,7 +39,6 @@ namespace ContaNegativos
         System.Console.WriteLine("");
 
       System.Console.WriteLine("--------------------------------");
-      System.Console.WriteLine("Elementos negativos da matriz: ");
       int countNegatives = 0;
 
       for (int i = 0; i < num; i++) 
